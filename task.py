@@ -16,6 +16,9 @@ app.conf.beat_schedule = {
     }
 }
 
+# app.task_acks_late = True
+# app.worker_prefetch_multiplier = 1
+
 #creating logger
 celery_log = get_task_logger(__name__)
 buckets = ['zmmbucket','g44bucket','g45bucket']
