@@ -28,7 +28,7 @@ def sendalert(data):
       "post": {
         "en_us": {
           "title":"OFFLINE BUILDINGS AS PER IAP PING STATUS",
-          "title":"2218 OFFLINE ISSUE",
+        
           "content": [
             [
               {
