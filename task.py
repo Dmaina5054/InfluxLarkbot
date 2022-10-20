@@ -21,7 +21,7 @@ app.conf.beat_schedule = {
 
 #creating logger
 celery_log = get_task_logger(__name__)
-buckets = ['zmmbucket','g44bucket','g45bucket']
+buckets = ['zmmbucket','g44bucket','g45bucket','lsmbucket','kwtbucket','htrbucket', 'rmmbucket']
 @app.task(name='MAINTASK')
 def main():    
     for bucket in buckets:
