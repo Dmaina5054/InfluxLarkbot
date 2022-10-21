@@ -56,7 +56,7 @@ def queryInflux(bucket):
                     print(e)
                 
                 # need to implement caching
-    #print(bldgkeys)
+    print(bldgkeys)
     cachealert(bldgkeys)
     return None
   

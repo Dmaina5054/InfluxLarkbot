@@ -73,6 +73,7 @@ def main():
 
     #data = ['G44-FIBER:Chalo', 'G44-FIBER:Classic_Apt', 'G44-FIBER:Elgon_[R]', 'G44-FIBER:Glory', 'G44-FIBER:Helpers', 'G44-FIBER:Imani', 'G44-FIBER:Kwa_Guka', 'G44-FIBER:Lynn', 'G44-FIBER:Magnet', 'G44-FIBER:Mamba_Village', 'G44-FIBER:Ngugi', 'G44-FIBER:PK_Hse', 'G44-FIBER:Uncle_Blue', 'G44-FIBER:Wa_Ruth', 'G44-FIBER:Witu_hse_2', 'G45-FIBER:Counter', 'G45-FIBER:Heri_Points', 'G45-FIBER:Kapkoi_Hse', 'G45-FIBER:Little_Leaders', 'G45-FIBER:Mammy_Wairimu', 'G45-FIBER:Miracle', 'G45-FIBER:Miracle_House', 'G45-FIBER:Mushae', 'G45-FIBER:Suntex', 'G45-FIBER:Zara', 'KWT-FIBER:Jura', 'KWT-FIBER:Wasonga', 'KWT-FIBER:Westham', 'LSM-FIBER:Aeneah', 'LSM-FIBER:Michigan', 'LSM-FIBER:NJ', 'LSM-FIBER:Nike', 'LSM-FIBER:Phonex', 'LSM-FIBER:Rwanda', 'LSM-FIBER:Simba', 'ROY-FIBER:By', 'ROY-FIBER:Deograts', 'ROY-FIBER:Digo', 'ROY-FIBER:Patma', 'ROY-FIBER:Pinkerton', 'ROY-FIBER:Rowan', 'ROY-FIBER:Tallic', 'ZMM-FIBER:Alsina', 'ZMM-FIBER:Hay_Hse', 'ZMM-FIBER:Helsinki', 'ZMM-FIBER:Mt._Nebo', 'ZMM-FIBER:Ring_Ting', 'ZMM-FIBER:Tosheka', 'ZMM-FIBER:Wadosi', 'ZMM-FIBER:Wahome']
     splitdata(data)
+   
 
 if __name__ == "__main__":
     main()

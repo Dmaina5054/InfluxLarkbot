@@ -58,9 +58,6 @@ def cacher(itemms):
             print(alarmkey)
             allalarms.append(alarmkey)
 
-
-            
-            allalarms.append(alarmkey)
             
     sendalert(allalarms)
     print(f'Before clear..{allalarms}')

@@ -12,7 +12,7 @@ app = Celery('task',broker='amqp://guest:guest@172.17.0.4:5672//',result_backend
 app.conf.beat_schedule = {
     'fetch  influxquery results':{
         'task': 'MAINTASK',
-        'schedule': 400,
+        'schedule': 10,
     }
 }
 
