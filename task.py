@@ -5,9 +5,16 @@ from queryinflux import queryInflux
 import asyncio
 from celery import chain
 from celery.utils.log import get_task_logger
+from dotenv import load_dotenv
+import os 
 
 
-app = Celery('task',broker='amqp://guest:guest@172.17.0.2:5672//',result_backend = 'rpc://')
+
+load_dotenv()
+
+
+BROKER_ENDPOINT = os.getenv('BROKEN_ENDPOINT')
+app = Celery('task',broker=F'{BROKER_ENDPOINT}',result_backend = 'rpc://')
 #app.conf.timezone = 'Africa/Nairobi'
 app.conf.beat_schedule = {
     'fetch  influxquery results':{
