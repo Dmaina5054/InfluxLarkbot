@@ -7,12 +7,12 @@ from celery import chain
 from celery.utils.log import get_task_logger
 
 
-app = Celery('task',broker='amqp://guest:guest@172.17.0.4:5672//',result_backend = 'rpc://')
+app = Celery('task',broker='amqp://guest:guest@172.17.0.2:5672//',result_backend = 'rpc://')
 #app.conf.timezone = 'Africa/Nairobi'
 app.conf.beat_schedule = {
     'fetch  influxquery results':{
         'task': 'MAINTASK',
-        'schedule': 10,
+        'schedule': 400,
     }
 }
 
