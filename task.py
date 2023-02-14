@@ -14,7 +14,7 @@ load_dotenv()
 
 
 BROKER_ENDPOINT = os.getenv('BROKEN_ENDPOINT')
-app = Celery('task',broker="amqp://maina:icub4ucmi@localhost:5672//",result_backend = 'rpc://')
+app = Celery('task',broker="amqp://maina:maina@localhost:5672//",result_backend = 'rpc://')
 #app.conf.timezone = 'Africa/Nairobi'
 app.conf.beat_schedule = {
     'fetch  influxquery results':{
@@ -28,8 +28,8 @@ app.conf.beat_schedule = {
 
 #creating logger
 celery_log = get_task_logger(__name__)
-buckets = ['htrbucket','zmmbucket','g44bucket','G45NBucket','G45SBucket','kwtbucket','RMM', 'LsmBucket']
-eastbuckets = ['G45NBucket']
+buckets = ['regionone']
+eastbuckets = ['easttwo']
 @app.task(name='MAINTASK')
 def main():    
     for bucket in buckets:
