@@ -20,6 +20,7 @@ load_dotenv()
 
 token = os.getenv('token')
 url = os.getenv('url')
+org = os.getenv('org')
 
 redisclient = Redis(db=1)
 bldgkeys = []
@@ -27,7 +28,7 @@ bldgkeys = []
 def queryInflux(bucket):
     print(bucket)
 
-    with InfluxDBClient(url=url, token=token,org='AH',debug=False) as client:
+    with InfluxDBClient(url=url, token=token,org=org,debug=False) as client:
 
         query_api = client.query_api()
         """
